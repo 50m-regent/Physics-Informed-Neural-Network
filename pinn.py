@@ -153,15 +153,3 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
-    
-    
-class Net(nn.Module):
-    def __init__(self):
-        self.p_net = nn.Sequential()
-        self.x_net = nn.Sequential()
-        
-    def forward(self, d):
-        p = self.p_net(d)
-        x = self.x_net(p)
-        
-        return p, x
